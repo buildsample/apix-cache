@@ -1,7 +1,5 @@
 language: php
 
-build_image: shippable/minv2
-
 php:
  # - 5.3
   - 5.4
@@ -31,12 +29,4 @@ before_script:
 
 script:
   - phpunit --coverage-text --configuration phpunit.xml.dist
-  - phpunit  --log-junit shippable/testresults/junit.xml --coverage-xml shippable/codecoverage --configuration phpunit.xml.dist
-
-parallelized_test: true
-
-archive: true
-
-cache: true
-
-build_image: shippable/minv2
+ 
