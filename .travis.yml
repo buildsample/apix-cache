@@ -31,3 +31,4 @@ before_script:
 script:
   - phpunit --coverage-text --configuration phpunit.xml.dist
  
+parallelized_test: true
