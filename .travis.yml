@@ -1,11 +1,17 @@
 language: php
 
+build_image: drydock/u12phpall:tip
 php:
  # - 5.3
-  - 5.4
-  #- 5.5
+  #- 5.4
+   - 5.5
   #- 5.6
 
+services:
+  - redis
+  - mongodb
+  - memcache
+  
 env:
   - DB=apc
   - DB=redis
